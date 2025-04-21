@@ -22,7 +22,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           </h1>
           <div className="flex space-x-2">
             <a
-              href="https://github.com/yourusername/typescript-modern-web-boilerplate"
+              href="https://github.com/smz-exe/typescript-modern-web-boilerplate"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"

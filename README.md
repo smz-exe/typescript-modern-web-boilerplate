@@ -44,7 +44,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/typescript-modern-web-boilerplate.git
+git clone https://github.com/smz-exe/typescript-modern-web-boilerplate.git
 cd typescript-modern-web-boilerplate
 
 # Install dependencies
