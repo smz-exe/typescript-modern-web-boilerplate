@@ -43,7 +43,7 @@ const safeDecode = (str: string): string => {
 };
 
 // 🔧 Mock JWT implementation for demonstration purposes
-const MOCK_SECRET = 'roocode-secret-key';
+const MOCK_SECRET = 'typescript-web-secret-key';
 
 /**
  * Simple mock JWT token generator

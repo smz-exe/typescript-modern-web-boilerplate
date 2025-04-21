@@ -45,8 +45,8 @@ coverage/
 # Next.js (if used)
 .next/
 
-# RooCode or AI Dev Tool artifacts
-.roocode/
+# AI Dev Tool artifacts
+.aitools/
 .roocode-cache/
 
 # Others

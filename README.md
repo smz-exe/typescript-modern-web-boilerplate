@@ -44,8 +44,8 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/modern-ts-web-template.git
-cd modern-ts-web-template
+git clone https://github.com/yourusername/typescript-modern-web-boilerplate.git
+cd typescript-modern-web-boilerplate
 
 # Install dependencies
 yarn install

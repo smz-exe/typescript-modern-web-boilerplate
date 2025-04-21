@@ -52,7 +52,7 @@ As a senior front-end engineer, your goal is to write modern, scalable, and main
 
 ## 💡 AI Usage
 - Prefer concise code suggestions.
-- When unsure, ask RooCode for examples, then adapt with project style in mind.
+- When unsure, ask AI assistants for examples, then adapt with project style in mind.
 
 ## 📘 Project Workflow & Conventions
 
