@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LucideHome, LucideLayoutDashboard, LucideUsers } from 'lucide-react';
+import { LucideHome, LucideLayoutDashboard, LucideUsers, LucideInfo } from 'lucide-react';
 import ThemeToggle from '../ThemeToggle.js';
 
 /**
@@ -13,6 +13,7 @@ export const Navigation: React.FC = () => {
     { name: 'Home', path: '/', icon: LucideHome },
     { name: 'Dashboard', path: '/dashboard', icon: LucideLayoutDashboard },
     { name: 'Users', path: '/users', icon: LucideUsers },
+    { name: 'About', path: '/about', icon: LucideInfo },
   ];
 
   return (

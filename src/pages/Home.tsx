@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { UserForm } from '../components/UserForm.js';
 import { Button } from '../components/ui/Button.js';
-import { LucideCode, LucideSettings, LucideUser } from 'lucide-react';
+import { LucideCode, LucideSettings, LucideUser, LucideLayout } from 'lucide-react';
+import UIShowcase from '../components/UIShowcase.js';
 
 // Define the form data type
 interface UserFormData {
@@ -15,7 +16,7 @@ interface UserFormData {
  * Home page component showcasing various features of the template
  */
 export const Home: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'form' | 'api' | 'buttons'>('form');
+  const [activeTab, setActiveTab] = useState<'form' | 'api' | 'buttons' | 'showcase'>('form');
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formData, setFormData] = useState<UserFormData | null>(null);
 
@@ -71,7 +72,18 @@ export const Home: React.FC = () => {
             } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm flex items-center transition-colors duration-200`}
           >
             <LucideSettings className="h-5 w-5 mr-2" />
-            UI Components
+            Button Components
+          </button>
+          <button
+            onClick={() => setActiveTab('showcase')}
+            className={`${
+              activeTab === 'showcase'
+                ? 'border-primary text-primary dark:text-primary'
+                : 'border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 hover:border-gray-300 dark:hover:border-gray-600'
+            } whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm flex items-center transition-colors duration-200`}
+          >
+            <LucideLayout className="h-5 w-5 mr-2" />
+            UI Showcase
           </button>
         </nav>
       </div>
@@ -194,6 +206,8 @@ const { data, isLoading, error } = useQuery({
             </div>
           </div>
         )}
+
+        {activeTab === 'showcase' && <UIShowcase />}
       </div>
     </div>
   );
