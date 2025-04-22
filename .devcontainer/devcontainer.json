@@ -12,7 +12,7 @@
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint",
         "ms-vscode.vscode-typescript-next",
-        "roocode.roocode-vscode"
+        "RooVeterinaryInc.roo-cline"
       ]
     }
   },
